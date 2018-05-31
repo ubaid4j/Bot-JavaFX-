@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="100.0" minWidth="200.0" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ubaid.view.RootPaneController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="140.0" prefWidth="800.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="89.0" prefWidth="328.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="User Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField alignment="TOP_LEFT" prefHeight="40.0" prefWidth="185.0" promptText="Enter User Name">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Password">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField prefHeight="40.0" prefWidth="185.0" promptText="Enter User Password">
+                                 <HBox.margin>
+                                    <Insets left="34.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </PasswordField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button id="loginButton" fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="100.0" text="Login" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="upLoadFileID" mnemonicParsing="false" text="Upload File" />
+                  <MenuItem fx:id="uploadCCMenuItem" mnemonicParsing="false" text="Upload Contacted Contacts" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="editTemplate" mnemonicParsing="false" text="Edit Template" />
+                  <MenuItem fx:id="edit_contacted_contacts" mnemonicParsing="false" text="Edit Contacted Contacts" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Action">
+              <items>
+                  <MenuItem fx:id="all_temp" mnemonicParsing="false" text="Test All Temp" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                <MenuItem fx:id="temp_1" mnemonicParsing="false" text="Test Temp-1" />
+                  <MenuItem fx:id="temp_2" mnemonicParsing="false" text="Test Temp-2" />
+                  <MenuItem fx:id="temp_3" mnemonicParsing="false" text="Test Temp-3" />
+                  <MenuItem fx:id="temp_4" mnemonicParsing="false" text="Test Temp-4" />
+                  <MenuItem fx:id="temp_5" mnemonicParsing="false" text="Test Temp-5" />
+                  <MenuItem fx:id="temp_6" mnemonicParsing="false" text="Test Temp-6" />
+                  <MenuItem fx:id="temp_7" mnemonicParsing="false" text="Test Temp-7" />
+                  <MenuItem fx:id="temp_8" mnemonicParsing="false" text="Test Temp-8" />
+                  <MenuItem fx:id="temp_9" mnemonicParsing="false" text="Test Temp-9" />
+                  <MenuItem fx:id="temp_10" mnemonicParsing="false" text="Test Temp-10" />
+                  <MenuItem fx:id="temp_11" mnemonicParsing="false" text="Test Temp-11" />
+                  <MenuItem fx:id="temp_12" mnemonicParsing="false" text="Test Temp-12" />
+                  <MenuItem fx:id="temp_13" mnemonicParsing="false" text="Test Temp-13" />
+                  <MenuItem fx:id="temp_14" mnemonicParsing="false" text="Test Temp-14" />
+                  <MenuItem fx:id="temp_15" mnemonicParsing="false" text="Test Temp-15" />
+                  <MenuItem fx:id="temp_16" mnemonicParsing="false" text="Test Temp-16" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

@@ -1,0 +1,23 @@
+Next 1 hour:
+    Searching for Bugs
+    Bugs have been founded: Now Eliminating bugs
+    error solved
+Time 12:52pm 27-April
+Now creating a heirarchy of templates which are supposed to be send for a specific file in the file of contacts file
+
+To do List:
+Sunday April When user name tpe dear userName: change the username to the name of reciever, a method is better for this
+
+2. how to upload a contacted contacts 
+    a. uploading a file, write by yourself, delete by yourself
+
+3. 1 hour research about sending message, creating a heirarchy of template for messages
+
+so for doing step2:
+    we required to find out the dependencies of contacted contacts table <Solved>
+    we want to include File number, fileName, Upload_date, contact [Solved]
+    Now creating a table [Solved]
+
+01-May-2018
+    Add a button for scheduling the emails [For testing] [NOt implementing]
+    

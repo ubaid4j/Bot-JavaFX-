@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="rootPane" minHeight="200.0" minWidth="250.0" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <SplitPane dividerPositions="0.6923847695390781" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <BorderPane id="contactsPane" prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <SplitPane dividerPositions="0.505307855626327" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+                     <items>
+                        <BorderPane id="ContactedContactsPane" fx:id="borderPaneForCC" prefHeight="200.0" prefWidth="200.0">
+                           <top>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="Contacted Contacts">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </BorderPane.margin>
+                              </HBox>
+                           </top>
+                        </BorderPane>
+                        <BorderPane id="AtemptedContactsPane" fx:id="borderPaneForAC" prefHeight="200.0" prefWidth="200.0">
+                           <top>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label text="Attempted Contacts">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </BorderPane.margin>
+                              </HBox>
+                           </top>
+                        </BorderPane>
+                     </items>
+                  </SplitPane>
+               </center>
+            </BorderPane>
+            <BorderPane id="statusPane" fx:id="anotherPane" prefHeight="200.0" prefWidth="200.0">
+               <bottom>
+                  <HBox alignment="CENTER" prefHeight="29.0" prefWidth="304.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ProgressBar fx:id="progressBar" prefHeight="24.0" prefWidth="200.0" progress="0.0" />
+                     </children>
+                  </HBox>
+               </bottom></BorderPane>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>

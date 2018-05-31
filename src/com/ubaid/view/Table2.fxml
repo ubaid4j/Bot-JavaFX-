@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<ScrollPane fx:id="attemptedContactsScroll" fitToHeight="true" fitToWidth="true" pannable="true" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ubaid.view.Table_2_Controller">
+   <content>
+      <TableView fx:id="tableID" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="iName" prefWidth="109.0" text="Name" />
+          <TableColumn fx:id="iEmail" prefWidth="200.0" text="Email" />
+            <TableColumn fx:id="iPhoneNumber" prefWidth="99.0" text="Phone Number" />
+            <TableColumn fx:id="iAddress" editable="false" prefWidth="75.0" text="Address" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </content>
+</ScrollPane>

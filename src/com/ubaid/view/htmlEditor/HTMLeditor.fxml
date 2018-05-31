@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ubaid.view.htmlEditor.HTMLeditor">
+   <center>
+      <HTMLEditor fx:id="htmlEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" prefHeight="200.0" prefWidth="506.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="29.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="28.0" prefWidth="188.0">
+               <children>
+                  <ComboBox fx:id="comboBox" prefHeight="29.0" prefWidth="188.0" promptText="Select Template" />
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="1.0" top="1.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <bottom>
+      <ToolBar prefHeight="35.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="button" mnemonicParsing="false" text="Save" />
+            <Button fx:id="openFile" mnemonicParsing="false" text="Open Picture" />
+        </items>
+      </ToolBar>
+   </bottom>
+</BorderPane>
